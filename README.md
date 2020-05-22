@@ -1,16 +1,3 @@
----
-
-title:        "Framework Django - 1. Understanding the web-framework"
-description:  "웹프레임 워크에대한 개념과 필요성"
-image:        "http://placehold.it/400x200"
-author:       "KimEunYeol"
-
----
-
-
-[TOC]
-
-
 
 ## 1. Framework
 
