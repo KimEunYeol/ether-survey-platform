@@ -55,24 +55,28 @@
 
 설문조사 생성의 경우 아래 사진과 같이 사용자는 설문조사 생성을 위해 제목, 총 보상 량, 보상 량에 대한 데이터를 입력하여야 하며 여기서 총 보상 량이란 설문조사에 모두 응답한 사용자에게 주어지는 보상 량의 총합을 뜻한다.
 사용자가 총 보상 5이더(5Eth)를 설문조사 생성 및 배포자가 지불하고 응답자에게 각 0.05이더를 보상하는 설문조사를 생성하는 화면이다.
+
 ![image](https://user-images.githubusercontent.com/38580908/82655228-d3a5bc80-9c5c-11ea-956e-20e026cf2e38.png)
 
 </br>
 아래 사진에서는 사용자가 설문조사를 생성했을 때 사용자의 지갑으로부터 보상 이더와 수수료를 지불하는 것을 보여주는 블록체인 암호 화폐 지갑 화면이다.
+
 ![image](https://user-images.githubusercontent.com/38580908/82656573-f2a54e00-9c5e-11ea-8d3d-7b09544825ae.png)
 
 </br>
 다음으로 설문을 생성한 사용자는 각 설문 문항을 추가해야 한다. 질의 하고자하는 문항을 입력하고 그에 대한 답안을 기입하여 설문 문항을 완성한다. 사진은 설문 문항 추가하기 위한 화면이다. 
+
 ![image](https://user-images.githubusercontent.com/38580908/82656578-f507a800-9c5e-11ea-8fe3-7cede845b0ee.png)
 
 </br>
 마지막으로 설문 문항 추가 작업을 모두 마치고 나면 설문조사가 생성된다. 아래 사진에서는 위 절차를 통해 생성한 설문조사가 실제 응답자에게 보여 지는 화면이다. 각 문항에 대한 결과는 도넛차트 통해 실시간으로 확인 할 수 있으며, 응답자는 각각의 설문 문항에 대해 적절한 선택지를 선택 후 제출하면 설문이 완료된다. 이로써 응답자는 0.05이더의 보상을 획득하게 되며, 완료된 설문의 데이터는 스마트 계약에 저장 된다.
+
 ![image](https://user-images.githubusercontent.com/38580908/82656584-f8029880-9c5e-11ea-9e59-33837561fa8c.png)
 
 ## 4. 핵심코드
-Input : 설문제목, 보상수량
-Output : 사용자 설문조사
-Describe : 일정 보상을 지급하는 설문조사 생성 Tx발생
+- Input : 설문제목, 보상수량
+- Output : 사용자 설문조사
+- Describe : 일정 보상을 지급하는 설문조사 생성 Tx발생
 ~~~javascript
 function createSurvey(bytes32 _title, uint _reward) public payable 
   address addr = (new Survey).value(msg.value)(_reward);
@@ -80,9 +84,9 @@ function createSurvey(bytes32 _title, uint _reward) public payable
   emit Created(addr);
 ~~~
 
-Input : 문항에 대한 응답
-Output : -
-Describe : 각 설문에 대한 응답을 해당 계약에 저장
+- Input : 문항에 대한 응답
+- Output : -
+- Describe : 각 설문에 대한 응답을 해당 계약에 저장
 ~~~javascript
 function participate(bytes32[] _response) public payable
   require(address(this).balance > reward);
