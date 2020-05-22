@@ -61,17 +61,17 @@
 </br>
 아래 사진에서는 사용자가 설문조사를 생성했을 때 사용자의 지갑으로부터 보상 이더와 수수료를 지불하는 것을 보여주는 블록체인 암호 화폐 지갑 화면이다.
 
-![image](https://user-images.githubusercontent.com/38580908/82656573-f2a54e00-9c5e-11ea-8d3d-7b09544825ae.png)
+![image](https://user-images.githubusercontent.com/38580908/82657260-08ffd980-9c60-11ea-8daf-6a35128e78a0.png)
 
 </br>
 다음으로 설문을 생성한 사용자는 각 설문 문항을 추가해야 한다. 질의 하고자하는 문항을 입력하고 그에 대한 답안을 기입하여 설문 문항을 완성한다. 사진은 설문 문항 추가하기 위한 화면이다. 
 
-![image](https://user-images.githubusercontent.com/38580908/82656578-f507a800-9c5e-11ea-8fe3-7cede845b0ee.png)
+![image](https://user-images.githubusercontent.com/38580908/82657339-29c82f00-9c60-11ea-8eca-3b8d0c246df2.png)
 
 </br>
 마지막으로 설문 문항 추가 작업을 모두 마치고 나면 설문조사가 생성된다. 아래 사진에서는 위 절차를 통해 생성한 설문조사가 실제 응답자에게 보여 지는 화면이다. 각 문항에 대한 결과는 도넛차트 통해 실시간으로 확인 할 수 있으며, 응답자는 각각의 설문 문항에 대해 적절한 선택지를 선택 후 제출하면 설문이 완료된다. 이로써 응답자는 0.05이더의 보상을 획득하게 되며, 완료된 설문의 데이터는 스마트 계약에 저장 된다.
 
-![image](https://user-images.githubusercontent.com/38580908/82656584-f8029880-9c5e-11ea-9e59-33837561fa8c.png)
+![image](https://user-images.githubusercontent.com/38580908/82657444-5419ec80-9c60-11ea-8479-b8e3e13110a4.png)
 
 ## 4. 핵심코드
 - Input : 설문제목, 보상수량
