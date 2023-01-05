@@ -7,7 +7,7 @@
     "react-billboardjs": "^1.5.0",
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5",
+    "react-scripts": "5.0.1",
     "web3": "^1.0.0-beta.36"
   },
   "scripts": {
